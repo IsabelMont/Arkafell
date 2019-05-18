@@ -60,8 +60,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CrearBloques.cs" />
+    <Compile Include="Assets\Scripts\Bloque.cs" />
     <Compile Include="Assets\Scripts\Racket.cs" />
-    <Compile Include="Assets\Suelo.cs" />
+    <Compile Include="Assets\Scripts\Suelo.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/isabe/Desktop/ARKAPRUEBA/Arkafell/Arkafell/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

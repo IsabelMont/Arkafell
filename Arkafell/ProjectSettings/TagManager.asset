@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - pelota
+  - Bloque
   layers:
   - Default
   - TransparentFX
