@@ -95,7 +95,7 @@ MonoBehaviour:
   IrrompibleColor: {fileID: 2100000, guid: 391029a9c942c214fbf9c8c7f4709930, type: 2}
   Puntos: 10
   Rompible: 1
-  golpesNecesarios: 2
+  golpesNecesarios: 1
   golpesdados: 0
 --- !u!61 &1463468273387704258
 BoxCollider2D:

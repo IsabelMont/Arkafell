@@ -200,8 +200,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c147f837c7761ce4dab1f115e95835b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  forced: 2000
+  speed: 6
+  forced: 3000
   velPelota: 1000
   pelota: {fileID: 564031092}
   pelotaMuerta: 1
