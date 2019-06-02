@@ -15,6 +15,9 @@ public class Bloque : MonoBehaviour
     public int golpesNecesarios = 1;
     public int golpesdados = 0;
     private int total = 0;
+    private int numbloques;
+    private GameObject[] contarbloques;
+    private int bloques;
     
     //public Material[] materiales;
 
@@ -24,22 +27,24 @@ public class Bloque : MonoBehaviour
         {
             golpeBloque();
         }
+
         
     }
 
-    void cambioEscena()
-    {
-
-        GameObject[] bloques = GameObject.FindGameObjectsWithTag("Bloque");
-       
-
-        if (bloques[0] == null)
-        {
+   // void cambioEscena()
+    //{
+      //  contarbloques= GameObject.FindGameObjectsWithTag("Bloque");
+        //bloques = contarbloques.Length;
+        
+        // numbloques = bloques;
+        //if (bloques == 0)
+        //{
            // Application.LoadLevel("Level2");
-            SceneManager.LoadScene(2);
-        }
+         //   SceneManager.LoadScene(2);
+        //}
 
-    }
+    //}
+
 
     void golpeBloque()
     {
@@ -49,18 +54,18 @@ public class Bloque : MonoBehaviour
         {
             Destruir();
 
-            GameObject[] bloques = GameObject.FindGameObjectsWithTag("Bloque");
-
-
-            if (bloques[0] == null)
-            {
-                // Application.LoadLevel("Level2");
-                SceneManager.LoadScene("Level2");
-            }
         }
 
     }
 
+    private void cambio()
+    {
+
+        if (GameObject.FindGameObjectsWithTag("Bloque").Length == 0)
+        {
+            SceneManager.LoadScene("2");
+        }
+    }
     private void Destruir()
     {
         Destroy(gameObject);
@@ -81,13 +86,13 @@ public class Bloque : MonoBehaviour
         
     }
 
-   // public void CambiarAIrrompible()
-    //{
-       //Rompible = false;
-        //GetComponent<MeshRenderer>().material = IrrompibleColor;
-        //Puntos = 0;
+    public void CambiarAIrrompible()
+    {
+       Rompible = false;
+        GetComponent<MeshRenderer>().material = IrrompibleColor;
+        Puntos = 0;
 
 
-    //}
+    }
 
 }

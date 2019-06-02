@@ -40,6 +40,7 @@ public class CrearBloques : MonoBehaviour
 
     }
 
+    
     //void Cambiopantalla();
 
 
@@ -47,21 +48,5 @@ public class CrearBloques : MonoBehaviour
 
 
     // Para cambiar a irrompibles algunos de los bloques
-   // void CrearIrrompibles()
-    //{
-      //  GameObject[] bloques = GameObject.FindGameObjectsWithTag("Bloque");
 
-        
-
-        //for (int i = 0; i< bloques.Length; i++)
-      //  {
-           // int aleatorio = Random.Range(0, 10);
-          //  if (aleatorio == 1)
-           // {
-              //  bloques[i].GetComponent<Bloque>().CambiarAIrrompible();
-           // }
-            
-      //  }
-
-   // }
 }

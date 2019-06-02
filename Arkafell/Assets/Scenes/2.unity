@@ -200,9 +200,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c147f837c7761ce4dab1f115e95835b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  forced: 2000
-  velPelota: 1000
+  speed: 7
+  forced: 1500
+  velPelota: 1200
   pelota: {fileID: 564031092}
   pelotaMuerta: 1
 --- !u!23 &260532577
@@ -780,7 +780,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloquePrfb: {fileID: 1463468273387704285, guid: 0df8d13a1c89f0b42861bce65decd1ab,
     type: 3}
-  materiales: []
+  materiales:
+  - {fileID: 2100000, guid: 57e6a024689f0f84bb3fdbad575fa0b6, type: 2}
+  - {fileID: 2100000, guid: 2d9fbc24c6fd30d4781ede21cb7bc0df, type: 2}
+  - {fileID: 2100000, guid: be438b3cd4187d04a8232b0178827743, type: 2}
+  - {fileID: 2100000, guid: aecd41b5a5a038041907eb38c5870471, type: 2}
   Bloques: {fileID: 411943111}
 --- !u!4 &1192992384
 Transform:

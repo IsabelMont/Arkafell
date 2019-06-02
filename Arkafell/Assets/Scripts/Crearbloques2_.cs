@@ -13,13 +13,13 @@ public class Crearbloques2_ : MonoBehaviour
         // Start is called before the first frame update
         void Start()
         {
-            Invoke("CrearBloques_", 0.5f);
+            Invoke("CrearBloques2_", 0.5f);
         }
 
-        void CrearBloques_()
+        void CrearBloques2_()
         {
             CrearFilas(6);
-            //  CrearIrrompibles();
+            CrearIrrompibles();
         }
 
         void CrearFilas(int num)
@@ -34,37 +34,53 @@ public class Crearbloques2_ : MonoBehaviour
         {
             for (int i = 0; i <= 7; i++)
             {
-                GameObject Bloquetemp = Instantiate(bloquePrfb, new Vector2(i - (7-i), y), Quaternion.identity);
+                
+                GameObject Bloquetemp = Instantiate(bloquePrfb, new Vector2(i - (7 - i*1), y), Quaternion.identity);
                 Bloquetemp.GetComponent<Bloque>().AplicarColor(materiales[Random.Range(0, materiales.Length)], materiales);
                 Bloquetemp.transform.parent = Bloques.transform;
             }
 
         }
 
-        //void Cambiopantalla();
+       void CrearIrrompibles() {
+        GameObject[] bloques = GameObject.FindGameObjectsWithTag("Bloque");
+
+
+
+        for (int i = 0; i< bloques.Length; i++)
+        {
+            int aleatorio = Random.Range(0, 10);
+            if (aleatorio == 1)
+             {
+                bloques[i].GetComponent<Bloque>().CambiarAIrrompible();
+             }
+        }
+       }
+
+    //void Cambiopantalla();
 
 
 
 
 
-        // Para cambiar a irrompibles algunos de los bloques
-        // void CrearIrrompibles()
-        //{
-        //  GameObject[] bloques = GameObject.FindGameObjectsWithTag("Bloque");
+    // Para cambiar a irrompibles algunos de los bloques
+    // void CrearIrrompibles()
+    //{
+    //  GameObject[] bloques = GameObject.FindGameObjectsWithTag("Bloque");
 
 
 
-        //for (int i = 0; i< bloques.Length; i++)
-        //  {
-        // int aleatorio = Random.Range(0, 10);
-        //  if (aleatorio == 1)
-        // {
-        //  bloques[i].GetComponent<Bloque>().CambiarAIrrompible();
-        // }
+    //for (int i = 0; i< bloques.Length; i++)
+    //  {
+    // int aleatorio = Random.Range(0, 10);
+    //  if (aleatorio == 1)
+    // {
+    //  bloques[i].GetComponent<Bloque>().CambiarAIrrompible();
+    // }
 
-        //  }
+    //  }
 
-        // }
-    
+    // }
+
 
 }

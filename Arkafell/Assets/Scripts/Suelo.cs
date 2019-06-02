@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Suelo : MonoBehaviour
 {
@@ -33,6 +34,12 @@ public class Suelo : MonoBehaviour
 
             //Cambiamos el valor de pelotaMuerta a true para saber que esta muerta.
             RacketScript.pelotaMuerta = true;
+
+          if (GameObject.FindGameObjectsWithTag("Bloque").Length == 0)
+            {
+                SceneManager.LoadScene("2");
+            }
+            
         }
     }
 
